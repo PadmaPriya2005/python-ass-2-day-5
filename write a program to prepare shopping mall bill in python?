@@ -1,0 +1,21 @@
+print("**********SHOPPING BILL*************")
+item1=int(input("Enter cost of item 1:"))
+item2=int(input("Enter cost of item 2:"))
+item3=int(input("Enter cost of item 3:"))
+item4=int(input("Enter cost of item 4:"))
+nitem1=int(input("Enter quantity of item 1:"))
+nitem2=int(input("Enter quantity of item 2:"))
+nitem3=int(input("Enter quantity of item 3:"))
+nitem4=int(input("Enter quantity of item 4:"))
+total=item1*nitem1+item2*nitem2+item3*nitem3+item4*nitem4
+if(total>2000):
+    disc=total*20/100
+elif(total>1500):
+    disc=total*15/100
+elif(total>1000):
+    disc=total*10/100
+else:
+    disc=total*5/100
+bill=total-disc
+print("Total bill amount: ",bill)
+print("Thank you!!!Visit Again!")
